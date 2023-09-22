@@ -44,7 +44,7 @@ jQuery(document).ready( function () {
                 url: 'https://nexaboo.rf.gd/translate_engine_ajax/translate_engine_ajax_1_0',
                 type: 'POST',
                 dataType: 'json',
-                data: {security_code: security_code, from_lang: translateFrom, to_lang: translateTo, translate_text: text},
+                data: {from_lang: translateFrom, to_lang: translateTo, translate_text: text},
                 success: function(response_translate_result) {
                     toText.value = response_translate_result;
                 }
