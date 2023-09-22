@@ -41,7 +41,7 @@ jQuery(document).ready( function () {
             if(!text) return;
             toText.setAttribute("placeholder", "Fordítás...");
             $.ajax({
-                url: 'https://nexaboo.rf.gd/translate_engine_ajax/translate_engine_ajax_1_0',
+                url: 'https://nexaboo.rf.gd/translate/translate_engine_ajax/translate_engine_ajax_1_0',
                 type: 'POST',
                 dataType: 'json',
                 data: {from_lang: translateFrom, to_lang: translateTo, translate_text: text},
