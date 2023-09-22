@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Nexaboo Fordító</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="uEttE5ASvGxnnIPbLosWhy2x70xQOj9aTDMDEJvZqgg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="icon" href="https://nexaboo.rf.gd/translate/images/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <meta name="description" content="A Nexaboo Fordító segítségével 96 nyelv között fordíthat egyetlen kattintással. A fordítás minősége kiemelkedő, és bármilyen eszközre elérhető." />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="https://nexaboo.rf.gd/translate" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nexaboo Fordító" />
+    <meta property="og:description" content="A Nexaboo Fordító segítségével 96 nyelv között fordíthat egyetlen kattintással. A fordítás minősége kiemelkedő, és bármilyen eszközre elérhető." />
+    <meta property="og:url" content="https://nexaboo.rf.gd/translate" />
+    <meta property="og:site_name" content="Nexaboo" />
+    <meta property="og:updated_time" content="2022-10-19T11:50:00+02:00" />
+    <meta property="og:image" content="https://nexaboo.rf.gd/translate/images/thumbnail.jpg" />
+    <meta property="og:image:secure_url" content="https://nexaboo.rf.gd/translate/images/thumbnail.jpg" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Nexaboo Fordító" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="article:published_time" content="2022-10-19T11:50:00+02:00" />
+    <meta property="article:modified_time" content="2022-10-19T11:50:00+02:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nexaboo Fordító" />
+    <meta name="twitter:title" content="Nexaboo Fordító" />
+    <meta name="twitter:description" content="A Nexaboo Fordító segítségével 96 nyelv között fordíthat egyetlen kattintással. A fordítás minősége kiemelkedő, és bármilyen eszközre elérhető." />
+    <meta name="twitter:image" content="https://nexaboo.rf.gd/translate/images/thumbnail.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Nexaboo Fordító" />
+    <meta name="twitter:label2" content="Time to read" />
+    <meta name="twitter:data2" content="Less than a minute" />
+    <header>
+        <div class="page-header">
+            <img src="./images/favicon.png" alt="" max-weight="30px" style="max-height: 36px;">
+        <h1 class="nexaboogrouph1nav"><a href="./">Nexa<span class="X">boo</span> Fordító</a></h1>
+        </a>
+        <style>
+.right-top-box {
+    position: absolute;
+    top: 15px;
+    left: auto;
+    right: 30px;
+    
+}
+
+.apps {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background-color: #00000000;
+}
+
+.apps span {
+    font-size: 34px;
+    font-weight: 900;
+    color: #8C8C8C;
+}
+
+.apps_menu_pop_up {
+  position: absolute;
+  width: 340px;
+  left: auto;
+  right: 10px;
+  background-color: #2C2C2C;
+  border-radius: 27px;
+  padding: 10px;
+  display: none;
+  top: 60px;
+}
+
+.apps_menu_pop_up_box {
+  padding: 15px;
+  border-radius: 27px;
+  background-color: #3C3C3C;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.apps_menu_pop_up_box button {
+  background-color: #4C4C4C;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+</style>
+<div class="right-top-box">
+    <button class="apps" id="apps_menu">
+        <span class="material-symbols-rounded">apps</span>
+    </button>
+</div>
+<div class="apps_menu_pop_up" id="apps_menu_pop_up">
+  <div class="apps_menu_pop_up_box">
+    <button onclick="location.href = 'https://nexaboo.rf.gd/';">
+      <img src="https://nexaboo.rf.gd/static/images/favicon.png" width="auto" height="70px">
+      <span>Kereső</span>
+    </button>
+    <button onclick="location.href = 'https://nexaboo.rf.gd/translate/';">
+      <img src="https://nexaboo.rf.gd/translate/images/favicon.png" width="auto" height="70px">
+      <span>Fordító</span>
+    </button>
+    <button onclick="location.href = 'https://nexaboo.rf.gd/draw/';">
+      <img src="https://nexaboo.rf.gd/draw/uploads/images/nexaboodraw.png" width="auto" height="70px">
+      <span>Draw</span>
+    </button>
+    
+  </div>
+</div>
+<script>
+document.getElementById('apps_menu').addEventListener('click', function() {
+      var apps_menu_pop_up = document.getElementById('apps_menu_pop_up');
+      if (apps_menu_pop_up.style.display == 'none') {
+        apps_menu_pop_up.style.display = 'flex';
+      } else {
+        apps_menu_pop_up.style.display = 'none';
+      }
+    });
+</script>        <a href="https://www.amazon.com/gp/product/B0C8BP8ZWC" class="amzn_app_store">
+        <img src="https://nexaboo.rf.gd/translate/uploads/img/amzn_app_store.png"   height="40px" width="auto"></a> 
+    </header>
+  </head>
+  <body style="background-color: #000000;">
+      <br>
+      <center>
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea spellcheck="false" class="from-text" id="from-text" placeholder="Szöveg megadása"></textarea>
+          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Fordítás"></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <span id="security_code" hidden>e8622a44c1e372a76dfc6c10fd71a893362db2412e16134b638e4a890ab66ec129f06dbe92c8f8942f09c56839d1f8885c4825e816f803b8c0851908f58d459b</span>
+    </div>
+      </center>
+      <script src="https://nexaboo.rf.gd/translate/js/countries_from_beta.js"></script>
+    <script src="https://nexaboo.rf.gd/translate/js/script_beta.js"></script>
+ <script>
+ if (!navigator.serviceWorker.controller) {
+     navigator.serviceWorker.register("sw.js").then(function(reg) {
+         console.log("Service worker has been registered for scope: " + reg.scope);
+     });
+ }
+ </script>
+
+    
+
+  </body>
+  <footer>
+    <a href="https://nexaboo.rf.gd/"><p class="nexaboojelzes">Nexaboo</p></a>
+</footer>
+
+</html>
