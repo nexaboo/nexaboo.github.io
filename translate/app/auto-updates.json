@@ -1,5 +1,5 @@
 {
   "versionCode": "31",
-  "min_android_version": "28",
+  "minAndroidVersion": "28",
   "versionName": "4.0"
 }
