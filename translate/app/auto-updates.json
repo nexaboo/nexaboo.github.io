@@ -1,7 +1,7 @@
 {
   "versionCode": "49",
   "minAndroidVersion": "28",
-  "versionName": "4.2",
+  "versionName": "4.3",
   "downloadUrl": "http://www.amazon.com/gp/mas/dl/android?p=ml.nexaboo.translate.twa",
   "releaseNotes": "Bug Fixes and add Auto Updates",
   "newFunctions": ["Bug fixes", "Minor UI update", "Added option to listen to text in Conversation mode", "Improved Update Monitor"]
