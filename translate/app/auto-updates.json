@@ -1,8 +1,8 @@
 {
-  "versionCode": "52",
+  "versionCode": "53",
   "minAndroidVersion": "28",
-  "versionName": "4.4",
+  "versionName": "4.4.1",
   "downloadUrl": "http://www.amazon.com/gp/mas/dl/android?p=ml.nexaboo.translate.twa",
-  "releaseNotes": "This update includes a number of bug fixes and better optimization.",
-  "newFunctions": ["Bug fixes", "Optimization"]
+  "releaseNotes": "This release fixes bugs in the UI for Bookmarks, further optimizes performance, and fixes a bug in Text to Speech where it would speak slowly.",
+  "newFunctions": ["Fixed bugs in the UI for Bookmarks", "Further optimized performance", "Fixed a bug in Text to Speech where it would speak text slowly"]
 }
