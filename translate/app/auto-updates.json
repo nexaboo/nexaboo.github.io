@@ -1,8 +1,8 @@
 {
-  "versionCode": "53",
+  "versionCode": "54",
   "minAndroidVersion": "28",
-  "versionName": "4.4.1",
+  "versionName": "4.5",
   "downloadUrl": "http://www.amazon.com/gp/mas/dl/android?p=ml.nexaboo.translate.twa",
-  "releaseNotes": "This release fixes bugs in the UI for Bookmarks, further optimizes performance, and fixes a bug in Text to Speech where it would speak slowly.",
-  "newFunctions": ["Fixed bugs in the UI for Bookmarks", "Further optimized performance", "Fixed a bug in Text to Speech where it would speak text slowly"]
+  "releaseNotes": "In this release, we fixed some bugs and updated the Magison AI, which from now on can speak not only English but also several languages.",
+  "newFunctions": ["Fixed some bugs", "We are updated the Magison AI"]
 }
