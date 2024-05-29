@@ -1,5 +1,5 @@
 {
-  "countriesAvailable": [],
+  "countriesAvailable": ["US"],
   "countriesAvailables": [
   "DZ",
   "AS",
@@ -168,7 +168,6 @@
   "TV",
   "UG",
   "AE",
-  "US",
   "UM",
   "VI",
   "UY",
