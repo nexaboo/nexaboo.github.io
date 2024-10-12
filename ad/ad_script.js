@@ -6,7 +6,7 @@ window.onload = function() {
     var imgElement = document.createElement("img");
 
     // Állítsa be a kép forrását
-    imgElement.src = "https://m.media-amazon.com/images/I/71bUr9l-2XL.jpg";
+    imgElement.src = "https://m.media-amazon.com/images/I/51b8X3Li58L._SL500_.png";
 
     // Állítsa be a kép szélességét 100%-ra
     imgElement.style.width = "100%";
