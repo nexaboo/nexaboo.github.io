@@ -24,6 +24,8 @@ window.onload = function() {
     // Set the cursor style to pointer
     imgElement.style.cursor = "pointer";
 
+    imgElement.style.borderRadius = "27px";
+
     // Create a new link element
     var linkElement = document.createElement("a");
 
