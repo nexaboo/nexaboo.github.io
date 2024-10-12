@@ -12,18 +12,23 @@ window.onload = function() {
     // Find the element with ID "nexaboo_ad_network"
     var rootElement = document.getElementById("nexaboo_ad_network");
 
+    // Check if rootElement exists
+    if (!rootElement) {
+        console.error("Element with ID 'nexaboo_ad_network' not found.");
+        return;
+    }
+
     // Create a new img element
     var imgElement = document.createElement("img");
 
     // Set the initial image source
     imgElement.src = images[adID];
 
-    // Set the image width to 100%
-    imgElement.style.width = "100%";
-
-    // Set the cursor style to pointer
+    // Set the image size and styles
+    imgElement.style.width = "300px";
+    imgElement.style.height = "600px";
+    imgElement.style.objectFit = "cover"; // Corrected property
     imgElement.style.cursor = "pointer";
-
     imgElement.style.borderRadius = "27px";
 
     // Create a new link element
