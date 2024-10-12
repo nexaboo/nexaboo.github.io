@@ -1,4 +1,31 @@
 window.onload = function() {
+    let images = [
+        "https://m.media-amazon.com/images/I/51b8X3Li58L.png",
+        "https://m.media-amazon.com/images/I/51iO43NQDtL.png",
+        "https://m.media-amazon.com/images/I/51rF-6SNm1L.png",
+        "https://m.media-amazon.com/images/I/71TtTsuXj5L.png",
+        "https://m.media-amazon.com/images/I/61oQuTgZFGL.png"
+    ];
+
+    var adID = 0;
+    
+    function changeAd() {
+        if (adID == images.length - 1) {
+            adID = 0;
+        } else {
+            adID++;
+        }
+    }
+    
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    while(true) {
+        changeAd()
+        sleep(5000)
+    }
+    
     // Keresse meg az "x_root" ID-jú elemet
     var rootElement = document.getElementById("nexaboo_ad_network");
 
@@ -6,7 +33,7 @@ window.onload = function() {
     var imgElement = document.createElement("img");
 
     // Állítsa be a kép forrását
-    imgElement.src = "https://m.media-amazon.com/images/I/51b8X3Li58L._SL500_.png";
+    imgElement.src = images[adID];
 
     // Állítsa be a kép szélességét 100%-ra
     imgElement.style.width = "100%";
