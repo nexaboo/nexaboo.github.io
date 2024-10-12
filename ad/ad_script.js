@@ -8,56 +8,48 @@ window.onload = function() {
     ];
 
     var adID = 0;
-    
-    function changeAd() {
-        if (adID == images.length - 1) {
-            adID = 0;
-        } else {
-            adID++;
-        }
-    }
-    
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
 
-    while(true) {
-        changeAd()
-        sleep(5000)
-    }
-    
-    // Keresse meg az "x_root" ID-jú elemet
+    // Find the element with ID "nexaboo_ad_network"
     var rootElement = document.getElementById("nexaboo_ad_network");
 
-    // Hozzon létre egy új képelemet
+    // Create a new img element
     var imgElement = document.createElement("img");
 
-    // Állítsa be a kép forrását
+    // Set the initial image source
     imgElement.src = images[adID];
 
-    // Állítsa be a kép szélességét 100%-ra
+    // Set the image width to 100%
     imgElement.style.width = "100%";
 
-    // Állítsa be a cursor stílust pointer-re
+    // Set the cursor style to pointer
     imgElement.style.cursor = "pointer";
 
-    // Hozzon létre egy új link elemet
+    // Create a new link element
     var linkElement = document.createElement("a");
 
-    // Állítsa be a link URL-jét
-    linkElement.href = "https://www.amazon.com/gp/product/B0C8BP8ZWC"; // Cserélje le a "your_link_url_here" részt a kívánt URL-re
+    // Set the link URL
+    linkElement.href = "https://www.amazon.com/gp/product/B0C8BP8ZWC"; 
 
-    // Adja hozzá a képelemet a link elemhez
+    // Add the img element to the link element
     linkElement.appendChild(imgElement);
 
-    // Hozzon létre egy új span elemet
+    // Create a new span element
     var spanElement = document.createElement("span");
 
-    // Adja hozzá a link elemet a span elemhez
+    // Add the link element to the span element
     spanElement.appendChild(linkElement);
 
-    // Adja hozzá a span elemet az "x_root" elemhez
+    // Add the span element to the "nexaboo_ad_network" element
     rootElement.appendChild(spanElement);
 
-    console.log("Sucess ad nexaboo")
+    // Function to change the ad
+    function changeAd() {
+        adID = (adID + 1) % images.length; // Loop through the images
+        imgElement.src = images[adID];     // Update the image source
+    }
+
+    // Change the ad every 5 seconds (5000 ms)
+    setInterval(changeAd, 5000);
+
+    console.log("Success ad nexaboo");
 }
