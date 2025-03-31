@@ -59,4 +59,13 @@ window.onload = function() {
     setInterval(changeAd, 5000);
 
     console.log("Success ad nexaboo");
+    if ('topics' in navigator) {
+      navigator.topics.getTopics().then((topics) => {
+        console.log('User intersetings:', topics);
+      }).catch((error) => {
+        console.error('Error:', error);
+      });
+    } else {
+      console.log('Topics API not supported this browser.');
+    }
 }
