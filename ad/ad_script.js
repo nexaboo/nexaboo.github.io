@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     let images = [
         "https://m.media-amazon.com/images/I/51b8X3Li58L.png",
         "https://m.media-amazon.com/images/I/51iO43NQDtL.png",
@@ -35,7 +35,8 @@ window.onload = function() {
     var linkElement = document.createElement("a");
 
     // Set the link URL
-    linkElement.href = "https://www.amazon.com/gp/product/B0C8BP8ZWC"; 
+    linkElement.href = "https://www.amazon.com/gp/product/B0C8BP8ZWC";
+    linkElement.target = "_blank"; // Open the link in a new tab
 
     // Add the img element to the link element
     linkElement.appendChild(imgElement);
@@ -59,16 +60,26 @@ window.onload = function() {
     setInterval(changeAd, 5000);
 
     console.log("Success ad nexaboo");
+
     if ('topics' in navigator) {
-      navigator.topics.getTopics().then((topics) => {
-        console.log('User intersetings:', topics);
-      }).catch((error) => {
-        console.error('Error:', error);
-      });
+        navigator.topics.getTopics().then((topics) => {
+            console.log('User interest topics:', topics);
+        }).catch((error) => {
+            console.error('Error:', error);
+        });
     } else {
-      console.log('Topics API not supported this browser.');
+        console.log('Topics API not supported in this browser.');
     }
 
-    const topics = await document.browsingTopics();
-    console.log(topics)
-}
+    // Remove invalid `await` usage for `document.browsingTopics`
+    if ('browsingTopics' in document) {
+        document.browsingTopics().then((topics) => {
+            console.log('Browsing Topics:', topics);
+        }).catch((error) => {
+            console.error('Error fetching browsing topics:', error);
+        });
+    } else {
+        console.log('Browsing Topics API not supported in this browser.');
+    }
+};
+
