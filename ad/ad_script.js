@@ -68,4 +68,7 @@ window.onload = function() {
     } else {
       console.log('Topics API not supported this browser.');
     }
+
+    const topics = await document.browsingTopics();
+    console.log(topics)
 }
