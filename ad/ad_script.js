@@ -25,8 +25,8 @@ window.onload = function () {
     imgElement.src = images[adID];
 
     // Set the image size and styles
-    imgElement.style.width = "300px";
-    imgElement.style.height = "600px";
+    imgElement.style.width = "243px";
+    imgElement.style.height = "512px";
     imgElement.style.objectFit = "cover"; // Corrected property
     imgElement.style.cursor = "pointer";
     imgElement.style.borderRadius = "27px";
