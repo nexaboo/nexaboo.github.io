@@ -1,10 +1,10 @@
 window.onload = function () {
     let images = [
-        "https://m.media-amazon.com/images/I/51b8X3Li58L.png",
-        "https://m.media-amazon.com/images/I/51iO43NQDtL.png",
-        "https://m.media-amazon.com/images/I/51rF-6SNm1L.png",
-        "https://m.media-amazon.com/images/I/71TtTsuXj5L.png",
-        "https://m.media-amazon.com/images/I/61oQuTgZFGL.png"
+        "https://play-lh.googleusercontent.com/PqlArUDql3G-R1iZPqK8Zd8FHKNlSs8MY3hAfi1ZTPXDrPqBHy17N25mfYldJM2kpMpM0f4dpMsaZgEg4VYdEQ=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/6JPfsD3aSeWfDfyQr8gbx2j9bx96HdaABekXjY3QQUA1ZpXjZvoeBHkl3bweCBPTkox42B7VtBCZsqJXkXzZ7w=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/FELkVUeN0ELlD-x4cL1XGYQrJ2mgEV7iu3UbKEwEYz-VQrVRuDdr10YdM-Uoy2UO4FVvPXEmPD0tbLzwPmXMhgA=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/Uf_WR3DayHHOj_CFqVgfA6fv5W_DsN_gc3XTTEvBuGXKu17-FvNDtmNPAFib4_G2gPkvEFFvfSoUOZJcMSW5=w5120-h2880-rw",
+        "https://play-lh.googleusercontent.com/ot8YkUNZlQ5k9OcYUhe9tSYKwbrhwKvghGgE49FfFbPBAfHVQecynqWQz5edNj14Z8uAVfppLb1H-Rf4oDE1Stc=w5120-h2880-rw"
     ];
 
     var adID = 0;
@@ -35,7 +35,7 @@ window.onload = function () {
     var linkElement = document.createElement("a");
 
     // Set the link URL
-    linkElement.href = "https://www.amazon.com/gp/product/B0C8BP8ZWC";
+    linkElement.href = "https://play.google.com/store/apps/details?id=com.zenqs.translate";
     linkElement.target = "_blank"; // Open the link in a new tab
 
     // Add the img element to the link element
