@@ -21,10 +21,10 @@ window.onload = function () {
             interval: 7000,
             label: "🔥 Kiemelt ajánlat"
         },
-        youtubeVideoId: "dQw4w9WgXcQ", // 👈 CSERÉLD LE a saját YouTube videó ID-ra
+        youtubeVideoId: "56b9uHAcHYc", // 👈 CSERÉLD LE a saját YouTube videó ID-ra
         popup: {
             delayMs: 3000,       // mikor jelenjen meg a popup (ms)
-            youtubeVideoId: "dQw4w9WgXcQ" // 👈 CSERÉLD LE
+            youtubeVideoId: "56b9uHAcHYc" // 👈 CSERÉLD LE
         }
     };
     // ============================
